@@ -1,23 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>de.pesse.gwt.jsinterop.threejs</groupId>
-  <artifactId>jsinterop-threejs</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <groupId>de.pesse.gwt.jsinterop.threejs</groupId>
+    <artifactId>jsinterop-threejs</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-  <name>jsinterop-threejs</name>
+    <name>jsinterop-threejs</name>
 
-  <properties>
+    <properties>
 
         <!-- Setting maven.compiler.source to something different to 1.8 needs 
             that you configure the sourceLevel in gwt-maven-plugin since GWT compiler 
             2.8 requires 1.8 (see gwt-maven-plugin block below) -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-
-        <!-- Don't let your Mac use a crazy non-standard encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -73,6 +71,16 @@
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-dev</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>three.js</artifactId>
+            <version>r88</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
