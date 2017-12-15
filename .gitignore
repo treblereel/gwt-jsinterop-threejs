@@ -1,0 +1,4 @@
+/target/
+.idea
+jsinterop-threejs/.idea
+jsinterop-threejs/target/
